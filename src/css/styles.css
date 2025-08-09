@@ -222,6 +222,12 @@ option {
     color: #000;
 }
 
+.year {
+    text-align: left;
+    font-size: 10px;
+    color: #bdbdbd;
+}
+
 @media(max-width:1280px) {
     .header {
         padding: 1.5rem 4%;
