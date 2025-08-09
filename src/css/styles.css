@@ -1,1 +1,223 @@
 /* styles.css */
+/* Importando a fonte Roboto do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Aplicando a fonte Roboto ao corpo da página */
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    border: none;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url('../assets/bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.header {
+    padding: 1.5rem 18%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header img {
+    width: 10rem;
+}
+
+.dark {
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    height: 700px;
+    width: 450px;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 5px;
+    padding: 60px;
+}
+
+.input {
+    width: 100%;
+    height: 60px;
+    margin: 15px 0;
+}
+
+.input input {
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    background-color: rgba(158, 158, 158, 0.1);
+    letter-spacing: .5px;
+    border: 1px solid #777;
+    border-radius: 5px;
+    padding: 20px 35px 0 15px;
+}
+
+.input input:focus {
+    outline: 2xp solid #fff;
+}
+
+.input label {
+    position: relative;
+    top: -64%;
+    left: 15.5px;
+    transform: translateX(-50%);
+    color: #b3b3b3;
+    transition: .2s ease;
+}
+
+.input input:focus ~ label,
+.input input:valid ~ label {
+    top: -50px;
+    left: 15.5px;
+    font-size: 12.5px;
+}
+
+.btn {
+    width: 100%;
+    height: 40px;
+    background-color: #f00;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    letter-spacing: .5px;
+    transition: 0.5s ease;
+}
+
+.btn:hover {
+    background-color: #ff0000ce;
+}
+
+.code {
+    width: 100%;
+    height: 40px;
+    background-color: rgba(218, 218, 218, .25);
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    letter-spacing: .5px;
+    transition: 0.5s ease;
+}
+
+.code:hover {
+    background-color: rgba(211, 211, 211, .20);
+}
+
+p {
+    text-align: center;
+    font-size: 17px;
+    color: #999;
+    margin: 20px 0;
+}
+
+.esqueceu a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+}
+
+.esqueceu a:hover {
+    text-decoration: underline;
+    color: #b6b6b6;
+}
+
+span {
+    display: flex;
+    gap: 8px;
+}
+
+span input {
+    accent-color: #fff;
+    height: 16px;
+    width: 16px;
+}
+
+.conta {
+    font-size: 16px;
+    text-align: left;
+    letter-spacing: .3px;
+}
+
+.conta a {
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.conta a:hover {
+    text-decoration: underline;
+}
+
+.captcha {
+    text-align: left;
+    font-size: 13px;
+}
+
+.captcha a {
+    color: #0071eb;
+    text-decoration: none;
+}
+
+.captcha a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    margin-top: 4rem;
+    padding: 5rem 16%;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1), rgba(0, 0, 0, 1), rgba(0, 0, 0, 1), rgba(0, 0, 0, 1), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5));
+}
+
+.footer h5 {
+    font-size: 17px;
+    text-align: left;
+    font-weight: 300;
+    color: #bdbdbd;
+}
+
+.footer h5 a {
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.lista-footer {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    gap: 1.5rem;
+}
+
+.lista-footer a {
+    color: #bbb;
+    font-size: 14.5px;
+    font-weight: 300;
+}
+
+select {
+    min-height: 20px;
+    min-width: 20px;
+    background-color: rgba(167, 167, 167, 0.1);
+    padding: .4rem 2%;
+    font-size: .9rem;
+    border: 1px solid rgba(255, 255, 255, .5);
+    border-radius: 6px;
+    backdrop-filter: blur(1px);
+    margin-top: 20px;
+}
+
+option {
+    color: #000;
+}
